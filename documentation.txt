@@ -1,0 +1,20 @@
+Store Management Project
+----------------------------------
+Technologies to be used:
+1. Front end: HTML/CSS
+2. Back end: JAVA
+3. Database: MYSQL
+
+Plan of Work to be done:
+1. The application will be used by 2 user types: the store manager and the store employee
+2. The role of store manager will be as follows:
+	i. He will assign gap check routines to a particular employee
+	ii. Check the status of each product
+	iii. Place order if the product level is below the threshold limit - gap fill
+3. The role of store employees will be as follows:
+	i. He will update the quantity of each product available during the gap check
+  	ii. Notify the store manager if any product is below threshold limit
+	iii. Update the list after gap filling.
+4. The database will consist of 10 products,5 employees and a store manager.
+
+
