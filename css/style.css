@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  float: left;
+  height: 60px;
+  width: 60px;
+  background-image: url("../img/logo1.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-indent: -1111px;
+  margin-left: 20px;
+}
+header{
+  width: 100%;
+  height: 60px;
+  background-image:linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.8));
+}
+header nav ul{
+  list-style: none;
+  float: right;
+  margin-right: 80px;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+  display: inline-block;
+  text-decoration: none;
+  color: #dedede;
+  text-transform: uppercase;
+  font-family: arial;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+
+}
+header nav ul li a:hover{
+  background-color: #333;
+  /* box-shadow: 1px 1px 4px #f3f3f3, -1px -1px 4px #f3f3f3; */
+}
+/*----------------------------------main body------------------------------  */
+body{
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../img/pic.jpg");
+
+}
+main{
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../img/pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.wrapper
+{
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top:100px;
+  background-image:linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  text-align: center;
+  color:  #dedede;
+}
+
+.wrapper p{
+  padding-top: 100px;
+	padding-bottom: 80px;
+	font-family: Catamaran;
+	font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn{
+  border: 1px solid;
+  padding: 10px 40px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #000;
+  background-color: #dedede;
+  cursor: pointer;
+}
+.btn:hover{
+  text-decoration: underline;
+}
+/* ------------------------------sign in-------------------- */
+.form{
+  width: 20% ;
+  margin : 20px auto 30px;
+  border-radius: 8px;
+  background-color: rgba(242, 242, 242, 0.2);
+  padding: 20px 20px;
+  display: none;
+  transition: all 0.8s ease-in-out;
+}
+.form ul{
+  padding: 10px 0 0 0;
+  transition: all 0.3s ease-in-out;
+}
+.form li{
+	list-style: none;
+	padding-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+label{
+  color:#f9f9f9;
+  text-align: left;
+  font-size: 15px;
+  font-family: arial;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+}
+
+input,select{
+  width: 100%;
+  height: 25px;
+  border-radius: 8px;
+}
+
+.signin{
+  width: 47%;
+  height: 45px;
+  padding: 10px 10px;
+  border: 1px solid #dedede;
+  border-radius: 15px;
+  color: #dedede;
+  background-color: #000;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+}
+.signin:hover{
+  color: #000;
+  background-color: #dedede;
+  cursor: pointer;
+}
