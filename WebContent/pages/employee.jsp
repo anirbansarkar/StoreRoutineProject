@@ -8,9 +8,8 @@
 </head>
 <body>
 	<%
-    if ((session.getAttribute("uname") == null) || (session.getAttribute("uname") == "")
-    	|| (session.getAttribute("pass") == null) || (session.getAttribute("pass") == "")
-    	|| (session.getAttribute("role") == null) || (session.getAttribute("role") == "")) {
+	if (!(session.getAttribute("uname").equals("anirban")) || !(session.getAttribute("pass").equals("siliguri")) 
+	    	|| !(session.getAttribute("role").equals("emp"))) {
 	%>
 	<p>You are not logged in<br/></p>
 	<a href="sign_in_page.html">Please Login</a>
