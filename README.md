@@ -32,11 +32,21 @@ Implementation of some simple store routine schedule system.
 4. The database will consist of 10 products,employees and a store manager.
 
 
-5. 4 tables are to be created. The details of each table are as follows:
-	- Table 1: To store the username, password and role 
-	- Table 2: To store the product id and the quantity of the product present in the shelves
-	- Table 3: To store the product id and the threshold quantity of the product required
-	- Table 4: To store the product id and the quantity present in the warehouse
+5. 6 tables are to be created. The details of each table are as follows:
+	i. Table 1(login_table): To store the username, password and role
+		-> Attributes: username, password, role
+	ii. Table 2(shelf): To store the product id and the quantity of the product present in the shelves
+		-> Attributes: pid, quantity
+	iii. Table 3(threshold): To store the product id and the threshold quantity of the product required
+		-> Attributes: pid, quantity
+	iv. Table 4(ordered): To store the product id and the quantity ordered by the manager
+		-> Attributes: pid, quantity
+	v. Table 5(warehouse) : To store the product id and the quantity present in the warehouse
+		-> Attributes: pid, quantity
+	v. Table 6(dailyroutine): To store the day and routines assigned to the employee,i.e. gap scan and gapfill
+		-> Attributes: day, gapscan, gapfill.
+	Once the gap fill routine task has been scheduled to the employee the ordered quantity will 
+	add up to the shelf and be deducted from the warehouse.
   
 ```
 
