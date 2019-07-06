@@ -11,7 +11,8 @@
 </head>
 <body>
 	<%
-    if (!(session.getAttribute("uname").equals("alok")) || !(session.getAttribute("pass").equals("1234")) 
+    if (session.getAttribute("uname") == null || session.getAttribute("pass") == null || session.getAttribute("role") == null
+    || !(session.getAttribute("uname").equals("alok")) || !(session.getAttribute("pass").equals("1234")) 
     	|| !(session.getAttribute("role").equals("man"))) {
 	%>
 	<p>You are not logged in<br/></p>
@@ -31,7 +32,8 @@
 					<button type="button" onclick="home()">Home</button>
 					<button type="button" onclick="current_status()">View Current Status</button>
 					<button type="button" onclick="assign()">Assign Routines</button>
-					<button type="button" onclick="order()">Order</button>
+					<button type="button" onclick="view_routine()">View Routines</button>
+					<button type="button" onclick="order()">Order</button>					
 					<a href = "logout.jsp"><button type="button" id="logout">Logout</button></a>
 				</div>
 			</div>
@@ -115,6 +117,17 @@
 		    }
 		  };
 		  xhttp.open("GET", "order.jsp", true);
+		  xhttp.send();
+	}
+	function view_routine() {
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		      document.getElementById("display").innerHTML =
+		      this.responseText;
+		    }
+		  };
+		  xhttp.open("GET", "viewroutine.jsp", true);
 		  xhttp.send();
 	}
 </script>

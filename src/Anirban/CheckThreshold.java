@@ -26,8 +26,8 @@ public class CheckThreshold {
 					("jdbc:mysql://localhost:3306/store","root","siliguri");
 			System.out.println("Connected");
 			Statement stmt = con.createStatement();
-			ResultSet rs=stmt.executeQuery("select sh.pid from shelf as sh,threshold as th "
-					+ "where sh.pid = th.pid and sh.quantity <= th.quantity");
+			ResultSet rs=stmt.executeQuery("select sh.pid from shelf as sh,threshold as th,ordered as od "
+					+ "where sh.pid = th.pid and sh.pid = od.pid and sh.quantity + od.quantity <= th.quantity");
 			while(rs.next()) {
 				String product_id = rs.getString(1);
 				arr.add(new CheckThreshold(product_id));
