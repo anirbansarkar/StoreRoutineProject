@@ -29,7 +29,8 @@
 				</div>
 				<div class = "button_list">
 					<button type="button" onclick="home()">Home</button>
-					<button type="button" onclick="update()">Update</button>					
+					<button type="button" onclick="update()">Update</button>	
+					<button type="button" onclick="fill()">Gap Fill</button>				
 					<a href = "logout.jsp"><button type="button" id="logout">Logout</button></a>
 				</div>
 			</div>
@@ -72,17 +73,17 @@
     <%}
 	%>
 <script>
-function home() {
-	  var xhttp = new XMLHttpRequest();
-	  xhttp.onreadystatechange = function() {
-	    if (this.readyState == 4 && this.status == 200) {
-	      document.getElementById("display").innerHTML =
-	      this.responseText;
-	    }
-	  };
-	  xhttp.open("GET", "employee_home.jsp", true);
-	  xhttp.send();
-}
+	function home() {
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		      document.getElementById("display").innerHTML =
+		      this.responseText;
+		    }
+		  };
+		  xhttp.open("GET", "employee_home.jsp", true);
+		  xhttp.send();
+	}
 	function update() {
 		  var xhttp = new XMLHttpRequest();
 		  xhttp.onreadystatechange = function() {
@@ -92,6 +93,17 @@ function home() {
 		    }
 		  };
 		  xhttp.open("GET", "update.jsp", true);
+		  xhttp.send();
+	}
+	function fill() {
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		      document.getElementById("display").innerHTML =
+		      this.responseText;
+		    }
+		  };
+		  xhttp.open("GET", "gap_fill.jsp", true);
 		  xhttp.send();
 	}
 </script>

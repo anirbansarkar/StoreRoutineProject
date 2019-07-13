@@ -9,7 +9,7 @@
 	<jsp:useBean id="ob" class="Anirban.ProductShelf"/>
 	<div class = "container">
 		<div class = "heading">
-			<h1>Order the following products : </h1>
+			<h1>Update the following products : </h1>
 		</div>
 		<div class = "tabledetails">
 			<form method = "POST" action = "updatedproduct.jsp">
