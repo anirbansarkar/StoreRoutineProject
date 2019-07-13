@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500,600,700&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <header>
+      <div class="logo"> Store!</div>
+        <nav>
+          <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">contact us</a> </li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <p class>Manage your store at ease!</p>
+        <button type="button" name="button" class="btn" onclick="toggle()">Get Started!</button>
+        <form class="form" action="index.html" method="post">
+          <ul>
+    				<li>
+              <label for="user">username</label> <br>
+              <input type="text" name="user" id="user" placeholder="enter username" required> </li>
+
+    				<li>
+              <label for="pwd">password</label> <br>
+              <input type="password" name="pwd" id="pwd" placeholder="***********" required> </li>
+
+
+    				<li>
+               <label for="pwd">Role</label> <br>
+                <select class="" name="role">
+                  <option value="">Manager</option>
+                  <option value="">Employee</option>
+                </select></li>
+
+            <li><input type="submit" value="SIGN IN" class="signin" style="float:left">
+            <input type="reset" name="reset" class="signin" style="float:right"></li>
+          </ul>
+        </form>
+
+      </div>
+    </main>
+
+    <footer></footer>
+
+  </body>
+
+  <script src="js/main.js"> </script>
+</html>
