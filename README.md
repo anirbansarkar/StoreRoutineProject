@@ -5,7 +5,7 @@ Implementation of some simple store routine schedule system.
 
 ### Technologies to be used
 ```
-*  Front end : HTML/CSS
+*  Front end : HTML,CSS,JS,JSP
 *  Back end : JAVA
 *  Database : MYSQL
 ```
